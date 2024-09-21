@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: black;
+}
+#root {
+  width: 100%;
+  height: auto;
+  /* padding: 2rem; */
+  text-align: center;
+  font-family: "Jersey 25", sans-serif;
+  color: white;
+  margin: 0;
+   padding: 0;
+  
+}
+
+
+.center{
+  /* width: 100vw; */
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.heading{
+  font-size: 48px;
+}
+.btn-sub{
+  padding: 9px;
+  color: white;
+  background-color: blueviolet;
+  border-radius: 20%;
+  font-weight: 500;
+  margin-left: 3px;
+  width: 70px;
+  font-size: 17px;
+  border: none;
+}
+
+.btn-sub:hover{
+  transform: scale(1.1);
+}
+
+.pass{
+  display: inline-block;
+  position: relative;
+}
+.Eye-Icon{
+  position: absolute;
+  top: 25%;
+  left: 80%;
+  font-size: 20px;
+  color: rgb(6, 6, 115);
+}
+
+#user, #password{
+  padding: 15px;
+  border: 2px solid grey;
+  border-radius: 12px;
+  color: black;
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 500;
+  margin: 0 3px;
+  font-size: 18px;
+
+}
+
+.greet{
+  font-size: 25px;
+}
+
+input[type="date"],
+input[type="time"] {
+  -webkit-appearance: none; /* Disable default styles in Safari/Chrome */
+  -moz-appearance: none; /* Disable default styles in Firefox */
+  appearance: none;
+  /* Add your custom styles here */
+}
+input[type="date"],
+input[type="time"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 13px;
+  color: blueviolet;
+  
+}
+
+#title, #Note, #StartTime, #EndTime, #Date{
+  color: black;
+}
+
+@media screen and (max-width: 720px){
+  .center{
+    width: 100vw;
+  }
+}
