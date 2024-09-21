@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Navbar } from "flowbite-react";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -17,10 +17,10 @@ function Header() {
       <Navbar.Link href="#" active>
         Home
       </Navbar.Link>
-      <Navbar.Link href="/about">About</Navbar.Link>
-      <Navbar.Link href="/services">Services</Navbar.Link>
-      <Navbar.Link href="/todo-app">Todo App</Navbar.Link>
-      <Navbar.Link href="/contact">Contact</Navbar.Link>
+      <Navbar.Link Link={"/about"}>About</Navbar.Link>
+      <Navbar.Link Link={"/services"}>Services</Navbar.Link>
+      <Navbar.Link Link={"/todo-app"}>Todo App</Navbar.Link>
+      <Navbar.Link Link={"/contact"}>Contact</Navbar.Link>
     </Navbar.Collapse>
   </Navbar>
   );
